@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
+/* Variáveis */
+
+:root {
+  --cor-primaria: #072069;
+  --cor-secundaria: #ffffff;
+  --azul-escuro: #041036;
+  --azul-claro: #96b1ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "ABeeZee", sans-serif;
+}
+
+html,
+body,
+#root {
+  background-color: #efefef;
+  height: 100%;
+}
+
+.menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  background-color: #091538;
+  color: var(--cor-secundaria);
+}
+
+.menu-principal h1 {
+  font-weight: 500;
+}
+
+.menu-principal ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.menu-principal li {
+  padding: 1em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-principal li a {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  transition: 0.2s;
+}
+
+.menu-principal li a:hover {
+  color: var(--azul-claro);
+}
+
+/* Flexbox */
+
+.container {
+  width: 100%;
+  padding: 4em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}

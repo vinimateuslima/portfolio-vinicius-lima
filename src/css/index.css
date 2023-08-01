@@ -1,0 +1,64 @@
+/* Header */
+
+#home {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  font-weight: 500;
+  padding-top: 2em;
+ 
+}
+
+#home h1,
+h2 {
+  color: var(--cor-secundaria);
+  font-weight: 500;
+  padding: 0.2em 0;
+}
+
+#home h2 {
+  font-size: 2em;
+}
+
+#home h1 {
+  font-size: 5em;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rede-social svg{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    fill: white;
+    transition: 0.5s;
+    
+}
+
+.rede-social svg:hover {
+    fill: var(--azul-claro);
+}
+
+
+.rede-social {
+    padding: 1em 1em 0 0;
+    
+}
+
+.titulo-secao {
+    font-size: 2em;
+    color: var(--cor-primaria);
+}
+
+section {
+    height: 100vh;
+}
+
+/* Sobre */
+
+.opcoes-sobre input{
+    background-color: #D9D9D9;
+}
