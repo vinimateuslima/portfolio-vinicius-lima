@@ -77,18 +77,134 @@
       </section>
       <section id="sobre">
         <div class="container">
-          <div class="col">
+          <div class="col-6">
             <h4 class="titulo-secao">Sobre mim</h4>
             <div class="opcoes-sobre">
-              <input type="radio" name="tipo-texto" id="texto-sobre-1">
-            <input type="radio" name="tipo-texto" id="texto-sobre-2">
-            <input type="radio" name="tipo-texto" id="texto-sobre-3" checked>
-            <input type="radio" name="tipo-texto" id="texto-sobre-4">
-            <input type="radio" name="tipo-texto" id="texto-sobre-5">
+              <input
+                type="radio"
+                name="tipo-texto"
+                id="texto-sobre-1"
+                onclick="selecionarTexto(this)"
+              />
+              <label for="texto-sobre-1"></label>
+              <input
+                type="radio"
+                name="tipo-texto"
+                id="texto-sobre-2"
+                onclick="selecionarTexto(this)"
+              />
+              <label for="texto-sobre-2"></label>
+              <input
+                type="radio"
+                name="tipo-texto"
+                id="texto-sobre-3"
+                onclick="selecionarTexto(this)"
+              />
+              <label for="texto-sobre-3"></label>
+              <input
+                type="radio"
+                name="tipo-texto"
+                id="texto-sobre-4"
+                onclick="selecionarTexto(this)"
+                checked
+              />
+              <label for="texto-sobre-4"></label>
+              <input
+                type="radio"
+                name="tipo-texto"
+                id="texto-sobre-5"
+                onclick="selecionarTexto(this)"
+              />
+              <label for="texto-sobre-5"></label>
+              <div class="legenda-sobre">
+                <p>Menor</p>
+                <p>É uma Bíblia é?</p>
+              </div>
+            </div>
+            <div id="sobre-mim">
+              <span class="hide" data-radio="texto-sobre-1">
+                <p>Bom, por onde posso começ...</p></span
+              >
+              <span class="hide" data-radio="texto-sobre-2">
+                <p>
+                  Em migração para a área de dev, amo tecnólogia e atividades
+                  criativas.
+                </p>
+              </span>
+              <span class="hide" data-radio="texto-sobre-3">
+                <p>
+                  Analista de Help Desk, trabalho há 4 anos como suporte,formado
+                  em Análise e Desenvolvimento de Sistemas atualmente em
+                  migração para área de desenvolvimento e em busca da primeira
+                  experiência no mercado.
+                </p></span
+              >
+              <span data-radio="texto-sobre-4">
+                <p>
+                  Tenho 24 anos e sou analista de Help Desk há 4 anos como
+                  suporte de Nivel 1, conheci o mundo da tecnologia desde os 9
+                  anos, e desde lá que começou minha calvície me encantei com as
+                  possibilidades que poderia fazer com um computador, desde
+                  edição de vídeos, animações, mod de minecraft e softwares.
+                </p>
+                <p>
+                  Sou curioso e gosto de tudo que envolva criatividade, procuro
+                  sempre inovar em algo que faço Sou desenvolvedor Full-Stack
+                  focado em ReactJS, Angula NodeJS e Java. Em 2021 comecei a
+                  faculdade de Análise e Desenvolvimento de Sistemas e agora que
+                  me formei estou em busca da primeira oportunidade.
+                </p>
+              </span>
+              <span class="hide" data-radio="texto-sobre-5">
+                <p>
+                  Tenho 24 anos e sou analista de Help Desk há 4 anos, atuando
+                  suporte de Nivel 1, possuo técnico em Redes e após me formar
+                  em Análise e Desenvolvimento de Sistemas estou em migração de
+                  área.
+                </p>
+                <p>
+                  Sou curioso e gosto de tudo que envolva criatividade, procuro
+                  sempre inovar em algo que faço.
+                </p>
+                <p>
+                  Natural de Recife e criado na periféria (saudosa comunidade do
+                  Detran), conheci o mundo da tecnologia desde os 9 anos, e
+                  desde lá que começou minha calvície me encantei com as
+                  possibilidades que poderia fazer com um computador, desde
+                  edição de vídeos, animações, mod de minecraft e softwares.
+                </p>
+                <p>
+                  Conheci melhor a programação em 2017 quando fiz o curso
+                  Accenture do Futuro e decidi qual carreria queria seguir.
+                </p>
+                <p>
+                  No ano seguinte recebi uma proposta mas não pude aceitar
+                  devido ao serviço militar obrigatório, isso me deixou triste
+                  mas determinado a sair e focar no meu objetivo.
+                </p>
+                <p>
+                  Em 2019 consegui entrar como suporte Help Desk, mas sempre
+                  almeijando a área dev Em 2021 comecei a faculdade de Análise e
+                  Desenvolvimento de Sistemas e agora que me formei estou em
+                  busca da primeira oportunidade.
+                </p>
+                <p>
+                  Sou curioso e gosto de tudo que envolva criatividade, procuro
+                  sempre inovar em algo que faço. Não perco uma piada por nada
+                  (não, não sou tio do pavê), gosto de fazer as pessoas rirem e
+                  expresso isso através de edição de vídeos, imagens, audios.
+                </p>
+                <p>
+                  Decidi Full Stack focando em tecnologias com foco em ReactJS,
+                  Angula NodeJS e Java.
+                </p>
+              </span>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
   </body>
 </html>

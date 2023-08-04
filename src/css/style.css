@@ -7,6 +7,7 @@
   --cor-secundaria: #ffffff;
   --azul-escuro: #041036;
   --azul-claro: #96b1ff;
+  --cinza: #D9D9D9;
 }
 
 * {
@@ -21,6 +22,10 @@ body,
 #root {
   background-color: #efefef;
   height: 100%;
+}
+
+p {
+  color: var(--cor-primaria);
 }
 
 .menu-principal {
