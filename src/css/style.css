@@ -28,6 +28,20 @@ p {
   color: var(--cor-primaria);
 }
 
+.btn {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  padding: 0.5em;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--azul-claro);
+}
+
 .menu-principal {
   display: flex;
   justify-content: space-between;
