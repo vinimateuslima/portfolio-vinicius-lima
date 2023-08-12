@@ -1,4 +1,7 @@
+const popSom = new Audio("../src/assets/audio/pop.mp3");
+
 function selecionarTexto(input) {
+  popSom.play();
   let textos = document.querySelectorAll("[data-radio]");
 
   // Percorrendo todos os textos

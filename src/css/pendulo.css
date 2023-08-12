@@ -1,0 +1,98 @@
+.pendulos {
+    width: 100%;
+    height: 200px;
+    perspective: 400px;
+    margin-top: -450px;
+    z-index: -1;
+    position: relative;
+}
+
+@keyframes pendulo-descendo {
+    0% {
+        margin-top: -450px;
+    }
+
+    100% {
+        margin-top: -70px;
+    }
+}
+
+@keyframes pendulo-subindo {
+    0% {
+        margin-top: -70px;
+    }
+
+    100% {
+        margin-top: -450px;
+    }
+}
+
+.pendulo {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    right: 44%;
+    top: 0;
+    left: 50%;
+
+}
+
+.pendulo .bar {
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    background-color: #333;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    display: block;
+}
+
+.pendulo .string {
+    position: absolute;
+    width: 2px;
+    height: 300px;
+    background-color: #333;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.pendulo .weight {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.pendulo .personagem {
+    position: absolute;
+    width: 400px;
+    left: 100%;
+    top: 200px;
+    transform: translateX(-50%);
+}
+
+.pendulo .motion {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    animation: anim 4s infinite ease-in-out;
+    transform-origin: 50% 10px;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
