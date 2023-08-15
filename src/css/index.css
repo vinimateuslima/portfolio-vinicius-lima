@@ -56,7 +56,6 @@ section {
 
 /* Sobre */
 
-
 .opcoes-sobre {
   width: 400px;
   margin-top: 50px;
@@ -223,6 +222,50 @@ section#skills {
 
 section#skills h4 {
   color: var(--cor-secundaria);
+}
+
+.grid-skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.3em 0.5em;
+  grid-auto-flow: row;
+  padding: 4em 10em;
+}
+
+.skill-logo {
+  width: 100%;
+  transition: all 0.5s;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.grid-skill:hover .skill-logo{
+  opacity: 0.3;
+}
+
+.grid-skill .skill-logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.skill #html-logo {
+  background-color: #E44D26;
+}
+
+.skill #css-logo {
+  background-color: #2299F8;
+}
+
+.skill #javascript-logo {
+  background-color: #F0DB4F;
+}
+
+.skill #node-logo {
+  background-color: #8FC84E;
+}
+
+.skill #java-logo, #mysql-logo, #mongodb-logo, #react-logo {
+  background-color: #ffffff;
 }
 
 .progress {
