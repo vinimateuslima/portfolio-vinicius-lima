@@ -57,8 +57,13 @@ section {
 /* Sobre */
 
 .opcoes-sobre {
-  width: 400px;
+  max-width: 400px;
   margin-top: 50px;
+}
+
+.opcoes-sobre ul {
+  list-style: none;
+  display: flex;
 }
 
 .opcoes-sobre input {
@@ -69,6 +74,7 @@ section {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 /* Radio Buttons */
@@ -131,7 +137,12 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 40px;
 }
 
+#projetos .grid {
+  justify-items: center;
+}
+
 .card {
+  width: 238px;
   height: 370px;
   background-color: white;
   border-radius: 10px;
@@ -227,13 +238,14 @@ section#skills h4 {
 .grid-skill {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.3em 0.5em;
+  gap: 0.5em 0.5em;
   grid-auto-flow: row;
   padding: 4em 10em;
 }
 
 .skill-logo {
   width: 100%;
+  height: 225px;
   transition: all 0.5s;
   padding: 1em;
   border-radius: 5px;
@@ -305,14 +317,21 @@ section#contato {
 section#contato h4 {
   color: var(--cor-secundaria);
   font-size: 2.8em;
+  text-align: center;
+}
+
+#contato .row {
+  flex-direction: column;
+  align-items: center;
 }
 
 #contato .redes-sociais {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 2em;
+  width: 50%;
 }
 
 #contato .rede-social svg {
@@ -341,11 +360,8 @@ section#contato h4 {
 /* Foto Flutuante */
 
 #foto-flutuante {
-  position: absolute;
+  width: 80%;
 
-  width: 500px;
-  height: 500px;
-  transition: all 1s;
 }
 
 #personagem {
