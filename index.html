@@ -11,7 +11,17 @@
   </head>
   <body>
     <nav class="menu-principal">
-      <h1>Vinicius Lima</h1>
+      <div class="menu-container">
+        <h1>Vinicius Lima</h1>
+      <div class="menu-hamburguer">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      </div>
       <ul class="menu-opcoes">
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
@@ -27,6 +37,7 @@
             <div class="col-6 col-sm">
               <h1>Olá, eu sou o Vinicius Lima!</h1>
               <h2>Desenvolvedor Full Stack</h2>
+              <p>Angular - React - Java - NodeJS</p>
               <div class="redes-sociais">
                 <div class="rede-social">
                   <a
@@ -253,7 +264,10 @@
             <div class="card">
               <!-- Imagem do card -->
               <div class="card-img">
-                <img src="./src/assets/cards/angular_blog.png" alt="Projeto de Blog em Angular" />
+                <img
+                  src="./src/assets/cards/angular_blog.png"
+                  alt="Projeto de Blog em Angular"
+                />
               </div>
               <!-- Corpo do card -->
               <div class="card-body">

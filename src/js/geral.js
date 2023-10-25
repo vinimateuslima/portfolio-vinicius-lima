@@ -1,3 +1,12 @@
+let menuHamburguer = document.getElementById('checkbox-menu');
+let menuOpcoes = document.querySelector('.menu-opcoes');
+
+menuHamburguer.addEventListener('click', () => {
+  menuOpcoes.classList.toggle('active');
+  console.log("clicou")
+})
+
+
 let botaoTopo = document.querySelector(".voltar-ao-topo");
 
 botaoTopo.addEventListener("click", function () {

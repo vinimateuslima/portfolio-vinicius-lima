@@ -23,6 +23,10 @@ h2 {
   font-size: 5em;
 }
 
+#home p {
+  color: #ffffff;
+}
+
 .redes-sociais {
   display: flex;
   flex-direction: row;
