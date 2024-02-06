@@ -173,6 +173,9 @@ input[type="radio"]:checked + label::after {
 .card-description {
   padding-top: 0.5em;
   font-size: 0.9rem;
+  overflow: auto;
+  text-overflow: ellipsis;
+  height: 45px;
 }
 
 .card-description p {
@@ -201,6 +204,10 @@ input[type="radio"]:checked + label::after {
 
 .linguagem-padrao {
   background: url("https://dummyimage.com/20X20/D9D9D9/fff.png");
+}
+
+.angular-icon {
+  background: url("../assets/icons/angular-icon.svg");
 }
 
 .react-icon {
@@ -255,7 +262,7 @@ section#skills h4 {
   border-radius: 5px;
 }
 
-.grid-skill:hover .skill-logo{
+.grid-skill:hover .skill-logo {
   opacity: 0.3;
 }
 
@@ -265,22 +272,25 @@ section#skills h4 {
 }
 
 .skill #html-logo {
-  background-color: #E44D26;
+  background-color: #e44d26;
 }
 
 .skill #css-logo {
-  background-color: #2299F8;
+  background-color: #2299f8;
 }
 
 .skill #javascript-logo {
-  background-color: #F0DB4F;
+  background-color: #f0db4f;
 }
 
 .skill #node-logo {
-  background-color: #8FC84E;
+  background-color: #8fc84e;
 }
 
-.skill #java-logo, #mysql-logo, #mongodb-logo, #react-logo {
+.skill #java-logo,
+#mysql-logo,
+#mongodb-logo,
+#react-logo {
   background-color: #ffffff;
 }
 
@@ -365,7 +375,6 @@ section#contato h4 {
 
 #foto-flutuante {
   width: 80%;
-
 }
 
 #personagem {
